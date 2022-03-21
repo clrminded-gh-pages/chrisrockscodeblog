@@ -85,10 +85,7 @@ public struct WebIndexTemplate: TemplateRepresentable {
                                 A("About")
                                     .href("#")
                                     .onClick("javascript:about();")
-                            }
-                            
-                            // authenticate signin
-                            Div {
+                                // authenticate signin
                                 if req.auth.has(AuthenticatedUser.self) {
                                     A("Sign-out")
                                         .href("/sign-out/")
